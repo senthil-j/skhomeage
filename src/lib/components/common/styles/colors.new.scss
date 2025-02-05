@@ -1,0 +1,95 @@
+// This file contains all the colors for new UI/UX design
+
+$primary-white: #ffffff;
+$primary-black:#04061B;
+
+$secondary-gray-01: #949398;
+$secondary-gray-02: #DBE3E8;
+$secondary-gray-03: #d7d8db;
+
+$neutral-light-01: #C6D9E5;
+$neutral-light-02: #CDE2EF;
+$neutral-light-03: #E1EDF4;
+$neutral-light-04: #F3F9FC;
+$neutral-light-05: #FBFBFC;
+
+$neutral-dark-01: #051F2F;
+$neutral-dark-02: #384349;
+$neutral-dark-03: #53616A;
+$neutral-dark-04: #81939E;
+$neutral-dark-05: #C0D0DA;
+
+$functional-orange: #EF7E2C;
+$functional-orange-02: #FE974C;
+$functional-yellow-04: #FFECA1;
+$functional-green-01: #7BB84A;
+$functional-yellow-02: #FFECA2;
+
+$extraTagBg: var(--extraTagBg);
+$extraTagTextColor: var(--extraTagTextColor);
+
+$icon-only-icon-blue: #0065A4;
+$color-grey:#53616A;
+$color-bg-black:#04061B;
+$color-grey-border:#CCCCCC;
+$color-yellow:#FFD400;
+$color-bg-grey:#FBFBFC;
+$error-red:#EF7E2C;
+$secondary-pink-01: #591953;
+$secondary-purple-01: #45009E;
+
+$color-grey-border-02: #b4b4b4;
+$functional-yellow: #F4CA24;
+$functional-green-03: #ADE780;
+$primary-blue: #047AC2;
+$tertiary-blue-02: #0065A4;
+$primary-yellow: #FFD400;
+$primary-yellow-01: #FCE700;
+
+$color-green: #95D364;
+
+$black:#000000;
+
+$color-manatee: #9a9da5;
+$x-wallet-background:#047AC2;
+$x-wallet-border:#0065A4;
+$alert-danger:#d21034;
+$blue-light: #D4EDFF;
+$jood-blue-light: #D4EDFF;
+$jood-gold-light: #FDF8E5;
+$jood-gold-lightest: #FFFCF3;
+$jood-gold-border: #725205;
+$jood-blue-border: #0065A4;
+
+@mixin desktop-min-width {
+    @media all and (min-width: 900px) {
+        @content;
+    }
+}
+@mixin responsive {
+    @media all and (max-width: 899px) {
+        @content;
+    }
+}
+@mixin desktop-max-width {
+    @media all and (max-width: 899px) {
+        @content;
+    }
+}
+
+@mixin desktop-extraSmall-width {
+    @media all and (max-width: 370px) {
+        @content;
+    }
+}
+
+.hide-on-desktop {
+    @include desktop-min-width {
+        display: none !important;
+    }
+}
+.hide-on-mobile {
+    @include desktop-max-width() {
+        display: none !important;
+    }
+}

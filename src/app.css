@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+	@font-face {
+		font-display: swap;
+		font-family: 'Dubai';
+		src: url('/fonts/dubai/DubaiW23-Light.woff2') format('woff2'), url('/fonts/dubai/DubaiW23-Light.woff') format('woff');
+		font-weight: 200;
+		font-style: normal;
+	}
+	@font-face {
+		font-display: swap;
+		font-family: 'Dubai';
+		src: url('/fonts/dubai/DubaiW23-Regular.woff2') format('woff2'), url('/fonts/dubai/DubaiW23-Regular.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+	}
+	@font-face {
+		font-display: swap;
+		font-family: 'Dubai';
+		src: url('/fonts/dubai/DubaiW23-Medium.woff2') format('woff2'), url('/fonts/dubai/DubaiW23-Medium.woff') format('woff');
+		font-weight: 500;
+		font-style: normal;
+	}
+	@font-face {
+		font-display: swap;
+		font-family: 'Dubai';
+		src: url('/fonts/dubai/DubaiW23-Bold.woff2') format('woff2'), url('/fonts/dubai/DubaiW23-Bold.woff') format('woff');
+		font-weight: 700;
+		font-style: normal;
+	}
+}
+/* :root {
+	font-family: Dubai, ui-sans-serif, system-ui,arial;
+} */
+ 
+@theme {
+    --font-display: "Dubai", "ui-sans-serif", "system-ui","arial";
+	--color-green-100: #DBE3E8;
+	--color-green-200: #E1EDF4;
+	--color-green-300: #C0D0DA;
+	--color-green-400: #81939E;
+	--color-black-100: #384349;
+	--color-black-200: #051F2F;
+	--color-black-300: #53616A;
+	--color-blue-50:  #F3F9FC;
+	--color-blue-100: #0065A4;
+	--color-blue-200: #047AC2;
+}
+body {
+	background: #fff;
+    color: #1f2533;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
